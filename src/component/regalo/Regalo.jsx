@@ -81,7 +81,7 @@ function Regalo(props)
     useEffect(()=>{
         if(!(isConnected))
             navigate('/')
-    },[isConnected])
+    },[isConnected,navigate])
 
 
 
