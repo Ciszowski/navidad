@@ -8,6 +8,7 @@ const CustomButtons = styled(Button)({
     boxShadow: 'none',
     textTransform: 'none',
     fontSize: '1.5vw',
+    padding: '14px 18px',
     border: '5px solid',
     lineHeight: 1.3,
     backgroundColor: '#800D0B',
