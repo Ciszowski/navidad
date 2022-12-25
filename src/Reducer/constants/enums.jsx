@@ -6,4 +6,4 @@ export const DIALOG = 'true|false';
 export const RESETPASS = 'reset-pass'
 export const PLAYING = 'play'
 
-export const SECRET_PWD = "Je t'aime"
+export const SECRET_PWD = "amor"
