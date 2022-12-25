@@ -95,7 +95,10 @@ function DialogComponent(props)
                         💝Conectate para acceder a tu regalo💝
                     </DialogTitle>
                     <Typography variant="body2" sx={{ textAlign: 'center',padding: '15px 25px 15px 25px',fontSize: '1.3vw' }}>
-                        El padre de navidad esta terco y solo te dara la contraseña el 25
+                        💝 Tu regalo llego !! ingresa la contraseña para recuperarlo 💝
+                    </Typography>
+                    <Typography sx={{ fontFamily: "Libre Baskerville", fontStyle: 'italic', color: "#B6B6B6", fontSize: "1vw", paddingTop: "10px"}}>
+                        Una clave : Te amo 
                     </Typography>
                     <FormControl variant="standard" style={styles.formControl} >
                         
