@@ -28,15 +28,22 @@ const styles = {
         justifyContent:'center',
         backgroundColor: "#000"
     },
+    contentStyle:{
+        width: '100%',
+        padding: 0,
+        margin: '0.2vw',
+        display: 'flex',
+        flexDirection: 'column', 
+        justifyContent: 'space-around'
+    },
     content:{
         h1 :{ 
             color: "#d54d7b",
             fontSize: "1.5vw",
             marginBottom: "0px",
-            marginTop: "0,3vw",
             textAlign: "center",
             textShadow: '0 1px 1px #fff',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
         },
         p : { 
             color: "#7a7c7f",
@@ -112,7 +119,7 @@ function Regalo(props)
                     <CardMedia
                         component="img"
                         image="/static/images/fleche.png"
-                        height="150"
+                        height="40%"
                         sx={{ width: '100%',alignSelf: 'center', objectFit: 'contain'}}
                     />
                     <CardActionArea onClick={event => onDownloadPDF()} sx={{display: 'contents'}}>
@@ -125,12 +132,12 @@ function Regalo(props)
                     </CardActionArea>
                     <Player url={vacation}/>
                 </CardContent>
-                <CardContent sx={{width: '100%'}}>
-                    <Typography sx={{ textAlign: 'center', paddingTop: 3, paddingBottom: 3, fontSize: '1.8vw', fontWeight: 700, border: "0.5vw groove red" }}>
+                <CardContent style={styles.contentStyle}>
+                    <Typography sx={{ lineHeight: 0, textAlign: 'center', paddingTop: 2, paddingBottom: 2, fontSize: '1.7vw',marginRight: 1, fontWeight: 700, border: "0.5vw groove red" }}>
                         🌹🌹🌹 Felices Navidad mi Amor 🌹🌹🌹
                     </Typography>
                     
-                    <CardContent sx={{ overflowY: 'scroll',backgroundColor: "#fff", height: "60%", borderRadius: 40,  marginTop: 3,  textAlign: 'center'}}>
+                    <CardContent sx={{ overflowY: 'scroll',backgroundColor: "#fff", height: "60%", padding: 1,borderRadius: 40,  marginTop: 1.5, marginBottom: 1.5,  textAlign: 'center'}}>
                         <Typography style={styles.content.h1} sx={{fontFamily: "Great Vibes"}}>
                             Mon amour
                         </Typography>
